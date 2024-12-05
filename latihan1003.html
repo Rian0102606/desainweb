@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN jQury</title>
+</head>
+<body>
+    
+    <button id="viewTEXT">Tampilkan Text</button>
+    <button id="hideTEXT">Sembunyikan Text</button>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nam blanditiis repellendus quisquam architecto ea. Beatae vitae repellat placeat officiis dolorum assumenda porro minima quisquam consectetur recusandae omnis debitis, explicabo earum ducimus harum illo repudiandae ab! Aspernatur tempora velit dolorem adipisci repudiandae inventore fuga at placeat quia, repellendus amet quis eos debitis eligendi. Nam hic quidem, quaerat maiores laboriosam ea inventore libero doloremque cupiditate vitae quas aperiam odit porro eligendi nesciunt praesentium reiciendis architecto voluptatem nisi minus. Laborum fuga perspiciatis numquam, vitae atque ea aliquam pariatur quos dolores totam veritatis rem delectus eius odio error quis nisi, enim dolorem repellat dicta saepe suscipit quidem debitis! Perspiciatis dicta voluptates numquam maxime dignissimos architecto dolor, illum aperiam accusantium iste necessitatibus commodi maiores delectus esse ut qui ad ipsam vitae repellendus rerum. Aspernatur debitis iusto unde nesciunt repudiandae saepe fuga quam dolore. Accusamus voluptatum nulla, maxime deserunt officia accusantium in inventore minima nostrum repellat cum earum, fuga dolore delectus nobis! Molestias ex doloribus quibusdam sint reprehenderit numquam atque beatae dolorem ab impedit officiis alias dicta eveniet error magnam at quo, ipsam nemo incidunt veniam necessitatibus fugiat assumenda. Sunt voluptatum sequi, itaque molestiae harum, ducimus at repellendus assumenda aut vitae cupiditate earum dolores similique.
+    </p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $( function(){
+             $('p').hide()
+             $('#hideTEXT').hide()
+             $('#viewTEXT').on('click',function(){
+                $('p').show(500)
+                $(this).hide()
+                $('#hideTEXT').show()
+             })
+             $('#hideTEXT').on('click',function(){
+                $('p').hide(500)
+                $(hide).show()
+                $("viewTEXT").show()
+                
+
+             })
+             
+
+        })
+    </script>
+</body>
+</html>
